@@ -62,11 +62,12 @@ if st.button('EXECUTAR O MODELO'):
     saida = modelo.predict(dados)
 	#classificacao = int(saida['TenYearCHD'])
 
-if saida == 0:
-    st.markdown('Você não tem previsão de doença, continue se cuidando!')
+    if saida == 0:
+        st.markdown('Você não tem previsão de doença, continue se cuidando!')
+    else:
+        st.markdown('Você tem chance de desenvolver doença cardíaca! Mude sua rotina')
 else:
-    st.markdown('Você tem chance de desenvolver doença cardíaca! Mude sua rotina')
-
+    pass
 
 # my_range = range(1,250)
 # number = st.select_slider("Escolha o valor", options = my_range, value = 5)
