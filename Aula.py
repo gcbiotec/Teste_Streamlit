@@ -19,7 +19,7 @@ st.markdown('Entre com os seus dados para verificar seu risco:')
 #
 # '''
 
-col1, col2 = st.beta_columns(2)
+col1, col2 = st.columns(2)
 
 x1 = col1.slider('Pressão Arterial Sistólica', 50, 150, 70, 1, help = 'Essa é pressão sistólica mais alta')
 x6 = col1.slider('Pressão Arterial Diastólica', 50, 150, 50, 1, help = 'Essa é pressão diastólica mais alta')
