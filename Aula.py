@@ -2,6 +2,11 @@ import streamlit as st
 import pandas as pd
 import pickle
 
+import numpy as np
+import matplotlib.pyplot as plt
+from sklearn.linear_model import LogisticRegression
+
+# print(pickle.format_version)
 
 st.image('saude-bem-estar.jpg')
 
