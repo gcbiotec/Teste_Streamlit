@@ -58,7 +58,7 @@ st.write(dados)
 
 st.markdown('---')
 
-with open('modelo_regress_Log.pkl', 'rb') as f:
+with open('modelo_regress_Log_local.pkl', 'rb') as f:
     modelo = pickle.load(f)
 
 #	saida = predict_model(modelo, dados)
